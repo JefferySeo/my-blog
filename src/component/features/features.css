@@ -1,0 +1,53 @@
+h1{
+    font-size:45px;
+}
+.features{
+    position:relative;
+    background-color: #f0f4f8;
+    padding-top:20px;
+    top:-55px;
+}
+.features .box{
+    padding:50px;
+}
+.features .box h2{
+    margin:20px 0 20px 0;
+    transition: 500ms;
+}
+.features .box p{
+    word-spacing: 2px;
+    transition:500ms;
+}
+.features .box .fe-icon{
+    font-size:35px;
+    margin-top:20px;
+    transition: 500ms;
+    opacity: 0;
+}
+.features .box:hover p,
+.features .box:hover h2{
+    color:#fff;
+}
+.features .box:hover .fe-icon{
+    color:#fff;
+    opacity: 1;
+}
+.features .btn-shadow{
+    padding:30px 50px;
+    border-radius: 5px;
+    box-shadow:-2px -2px 5px rgba(255,255,255,1),
+                3px 3px 5px rgba(0,0,0,0.1);
+}
+.features .btn-shadow:hover{
+    background-color: #ff8800;
+    box-shadow:-2px -2px 8px rgba(255,255,255,1),
+                3px 3px 8px rgba(0,0,0,0.1);
+}
+.features .btn-shadow:active{
+    box-shadow: inset -2px -2px 5px rgba(255,255,255,1),
+                inset 3px 3px 5px rgba(0,0,0,0.1);
+}
+.card svg{
+    width:30px;
+    height:30px;
+}

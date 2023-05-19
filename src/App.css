@@ -1,38 +1,102 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+#root{
+  position:relative;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f0f4f8;
+  overflow-x:hidden;
+}
+.container{
+  max-width: 95%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.f-flex{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+li{
+  list-style: none;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+button{
+  border:none;
+  outline: none;
+  background-color: none;
+  font-weight: 500;
+}
+.row, .left, .right{
+  width:50%;
+}
+.top{
+  margin-top:80px;
+}
+.mtop{
+  margin-top:40px;
+}
+.heading{
+  margin:50px 0 50px 0;
+}
+.heading h4{
+  color:#ff014f;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+h1{
+  color:#3c3e41;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+p{
+  color:#3c3e41;
+}
+.text-center{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.primary-color{
+  color:#ff014f;
+}
+textarea, input{
+  width:100%;
+  padding:20px;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid #e2e8ec;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width : 768px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .left, .right{
+    width: 100%;
   }
 }

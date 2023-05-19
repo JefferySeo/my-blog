@@ -1,0 +1,99 @@
+.hero{
+    position: relative;
+}
+.hero .left{
+    margin-left:10%;
+}
+.hero h3{
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.hero h1{
+    font-size:60px;
+    font-weight: 700;
+}
+.hero h1 span{
+    color:#ff6600;
+}
+.hero p{
+    color:#878e99;
+    font-size:18px;
+    line-height: 30px;
+    margin-top:30px;
+    width:80%;
+}
+.hero-btn{
+    margin-top:10%;
+    width:80%;
+}
+.hero-btn h4{
+    font-weight: 500;
+    letter-spacing: 2px;
+    color:#43474b;
+    font-size: 18px;
+    margin:30px 0 30px 0;
+}
+.hero-btn .btn-shadow{
+    text-align: center;
+    margin-right:20px;
+    padding:5px;
+    border-radius: 5px;
+    box-shadow:-2px -2px 5px rgba(255,255,255,1),
+                3px 3px 5px rgba(0,0,0,0.1);
+}
+.hero-btn .btn-shadow:hover{
+    box-shadow:-2px -2px 8px rgba(255,255,255,1),
+                3px 3px 8px rgba(0,0,0,0.1);
+}
+.hero-btn .btn-shadow:active{
+    box-shadow: inset -2px -2px 5px rgba(255,255,255,1),
+                inset 3px 3px 5px rgba(0,0,0,0.1);
+}
+.hero-btn .icon{
+    font-size:30px;
+    color:#43474b;
+}
+.hero .right{
+    width:40%;
+    position: relative;
+}
+.hero .right-img{
+    width:500px;
+    height:550px;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    position:relative;
+}
+.hero .right-img img{
+    position:absolute;
+    top:50px;
+    left:30px;
+    width:470px;
+    height:500px;
+    object-fit: contain;
+}
+
+@media (max-width:768px){
+    .hero .right,
+    .hero .left{
+        width: 100%;
+    }
+    .hero .f-flex{
+        flex-direction: column-reverse;
+    }
+    .container .top{
+        position: relative;
+    }
+    .hero .right{
+        top: -40px;
+        z-index: 1;
+        position:relative;
+    }
+    .hero .left{
+        position:relative;
+        z-index: 2;
+        background-color: #f0f4f8;
+        top:-100px;
+    }
+}
