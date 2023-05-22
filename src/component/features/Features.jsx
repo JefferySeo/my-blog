@@ -2,7 +2,7 @@ import React from 'react';
 import "./features.css";
 import { RiArrowRightLine } from 'react-icons/ri';
 import Card from './Card';
-import data from '../../data/features-api';
+import data from '../../data/api';
 import {MdOutlineSportsBaseball, MdOutlineSportsCricket, MdOutlineSportsBasketball, MdOutlineSportsFootball, MdOutlineSportsMartialArts, MdOutlineSportsMotorsports} from 'react-icons/md';
 
 const Features = () => {

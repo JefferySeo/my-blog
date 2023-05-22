@@ -1,0 +1,139 @@
+.portfolio{
+    position:relative;
+}
+.portfolio .box{
+    border-radius: 10px;
+    position:relative;
+}
+.portfolio .box:hover{
+    background-color: none;
+    transform:translateY(0);
+}
+.portfolio .img{
+    height:300px;
+    overflow:hidden;
+    transition:0.5s;
+}
+.portfolio img{
+    width:100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.portfolio .box .img:hover img{
+    transform:scale(1.2);
+}
+.portfolio .btn-shadow{
+    margin-top:30px;
+    padding:20px 30px;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow:-2px -2px 5px rgba(255,255,255,1),
+                3px 3px 5px rgba(0,0,0,0.1);
+}
+.portfolio .btn-shadow:hover{
+    background-color: #eeeeee;
+    box-shadow:-2px -2px 8px rgba(255,255,255,1),
+                3px 3px 8px rgba(0,0,0,0.1);
+}
+.portfolio .btn-shadow:active{
+    box-shadow: inset -2px -2px 5px rgba(255,255,255,1),
+                inset 3px 3px 5px rgba(0,0,0,0.1);
+}
+.portfolio .category{
+    margin:20px 0 30px 0;
+    text-transform: uppercase;
+}
+.portfolio .category span{
+    color:#ff8800;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.portfolio .arrow{
+    position:absolute;
+    right:30px;
+    bottom: 8%;
+    transform:rotate(-45deg);
+    transition:0.5s;
+    opacity: 0;
+}
+.portfolio .box:hover .arrow{
+    opacity:1;
+}
+.portfolio h2{
+    font-size: 20px;
+    transition:0.5s;
+    padding-bottom: 30px;
+}
+.portfolio .box:hover h2{
+    color:#ff8800;
+}
+.portfolio .box:hover{
+    background-color: #000;
+    transition: 0.5s;
+}
+.portfolio label{
+    display: flex;
+    width:70px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:10px;
+}
+.portfolio .box:hover label{
+    color:#fff;
+}
+
+/*** modal ***/
+.modal, .overlay{
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:fixed;
+    z-index: 999;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content{
+    position:absolute;
+    top:12%;
+    left:8%;
+    line-height: 1.4;
+    background: #f0f3f5;
+    padding:15px 30px;
+    min-width:60%;
+    max-width: 85%;
+    z-index:9999;
+    box-shadow: inset -4px -4px 8px rgba(255,255,255,1),
+                inset 4px 4px 8px rgba(0,0,0,0.1);
+    padding:50px;
+    border-radius: 10px;
+}
+.modal-text{
+    padding:0 100px 0 50px;
+}
+.modal-text h1{
+    margin:20px 0 20px 0;
+    font-size:30px;
+}
+.modal-text p{
+    font-size:17px;
+    margin-bottom:20px;
+}
+.modal-text button{
+    font-size:18px;
+    margin-left:10px;
+}
+.modal-text button.close-modal{
+    position:absolute;
+    border-radius: 50%;
+    margin:0;
+    padding:10px;
+    top:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+}
