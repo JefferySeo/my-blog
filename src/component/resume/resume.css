@@ -1,0 +1,76 @@
+.content-section{
+    position:relative;
+}
+ul.container{
+    position: relative;
+}
+.content-section ul::before{
+    content:"";
+    display: block;
+    position:absolute;
+    left:50%;
+    margin-left:-2px;
+    padding:20px 0;
+    width:3px;
+    height:100%;
+    background-color: #ccc;
+}
+ul.container li{
+    position:relative;
+    margin-bottom:30px;
+    width:70%;
+    overflow: auto;
+}
+
+ul.container li:nth-child(even){
+    margin-left:50%;
+}
+li .box{
+    margin: 0px 30px 0;
+    padding:40px;
+    
+}
+li .btn-shadow{
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1),
+                -4px -4px 8px rgba(255,255,255,1);
+    background-color: #f0f4f8;
+    border-radius: 15px;
+}
+li::after{
+    content:"";
+    top:50px;
+    width: 30px;
+    height:3px;
+    background: #ccc;
+    position:absolute;
+    
+}
+li:nth-child(odd)::after{
+    right:0;
+}
+li .box h2{
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+li .box .cate{
+    color:#999;
+}
+li .box span{
+    position:absolute;
+    top:20px;
+    right:150px;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    color:#ff014f;
+    padding:10px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.15);
+}
+li .box hr{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+li .box:hover{
+    background-color: #ff8800;
+    transition:400ms;
+    color:#fff;
+}
