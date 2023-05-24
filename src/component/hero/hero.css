@@ -34,22 +34,7 @@
     font-size: 18px;
     margin:30px 0 30px 0;
 }
-.hero-btn .btn-shadow{
-    text-align: center;
-    margin-right:20px;
-    padding:5px;
-    border-radius: 5px;
-    box-shadow:-2px -2px 5px rgba(255,255,255,1),
-                3px 3px 5px rgba(0,0,0,0.1);
-}
-.hero-btn .btn-shadow:hover{
-    box-shadow:-2px -2px 8px rgba(255,255,255,1),
-                3px 3px 8px rgba(0,0,0,0.1);
-}
-.hero-btn .btn-shadow:active{
-    box-shadow: inset -2px -2px 5px rgba(255,255,255,1),
-                inset 3px 3px 5px rgba(0,0,0,0.1);
-}
+
 .hero-btn .icon{
     font-size:30px;
     color:#43474b;

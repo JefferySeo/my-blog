@@ -11,7 +11,6 @@ const Card = (props) => {
                 <span>{props.year}</span>
                 <hr />
                 <p>{props.desc}</p>
-                
             </div>
         </li>
 

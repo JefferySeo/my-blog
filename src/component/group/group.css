@@ -1,0 +1,93 @@
+h1{
+    font-size:45px;
+}
+.group h2{
+    margin:40px 0 0 0;
+}
+.group .left{
+    padding:35px;
+    width: 35%;
+    margin:20px;
+}
+.group .right{
+    width:65%;
+    padding:0 0 0 50px;
+    margin: 0 20px 0 0;
+}
+.group .quote{
+    font-size:150px;
+    opacity: 0.1;
+}
+.group .context{
+    padding:50px;
+}
+.group .content h1{
+    font-weight: 500;
+}
+.group .content h3{
+    font-size:18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.group .slide{
+    position: relative;
+    max-width: 80%;
+    margin:auto;
+    height:500px;
+    display: flex;
+    overflow:hidden;
+}
+.group .slide-button button{
+    font-size: 40px;
+    width:60px;
+    height: 50px;
+}
+.group .slide-button {
+    position:absolute;
+    top:30px;
+    right:20px;
+}
+article{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: all 0.3s linear;
+}
+article.activeSlide{
+    opacity: 1;
+    transform:translateX(0);
+}
+article.lastSlide{
+    transform: translateX(-100%);
+}
+article.nextSlide{
+    transform:translateX(100%);
+}
+article .icon{
+    color:#999;
+    font-size:150px;
+    line-height: 150px;
+    margin-top:-15px;
+}
+article h3{
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+article p{
+    margin: 20px 0;
+}
+article p span{
+    padding:5px 10px;
+    border:1px solid #ddd;
+    border-radius: 10px;
+}
+article p.desc{
+    margin-top:40px;
+    letter-spacing: 2px;
+    font-size:16px;
+    font-weight: bold;
+    font-family: monospace;
+}
