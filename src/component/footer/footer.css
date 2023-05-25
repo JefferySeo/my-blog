@@ -1,0 +1,27 @@
+footer{
+    margin: 40px auto 20px auto; 
+    width:90%;
+    border-top:1px solid #ddd;
+    position:relative;
+}
+footer::before{
+    content:"";
+    display: block;
+    width:100%;
+    height:2px;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.flogo img{
+    width: 80px;
+    position:absolute;
+    top:30px;
+    left:50px;
+}
+footer p{
+    width:40%;
+    font-size:14px;
+    color:#999;
+    font-family: cursive;
+    margin-top:-30px;
+}

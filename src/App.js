@@ -6,6 +6,8 @@ import Features from './component/features/Features';
 import Portfolio from './component/portfolio/Portfolio';
 import Resume from './component/resume/Resume';
 import Group from './component/group/Group';
+import Contact from './component/contact/Contact';
+import Footer from './component/footer/Footer';
 
 const App = () => {
   return (
@@ -16,6 +18,10 @@ const App = () => {
       <Portfolio />
       <Resume />
       <Group />
+
+      <Contact />
+
+      <Footer />
     </>
   );
 };
